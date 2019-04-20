@@ -11,7 +11,8 @@ import 'package:mpp/src/config/plugins/repo_manager.dart';
 import 'package:path/path.dart' as p;
 import 'package:pubspec/pubspec.dart';
 
-FutureOr _authGuard(RequestContext req, ResponseContext res) => requireAuthentication<User>()(req, res);
+FutureOr _authGuard(RequestContext req, ResponseContext res) =>
+    requireAuthentication<User>()(req, res);
 
 @Expose('/', middleware: [_authGuard])
 class PubController extends Controller {

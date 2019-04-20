@@ -13,7 +13,6 @@ AngelConfigurer configureServer(FileSystem fileSystem) {
     // See: https://github.com/angel-dart/configuration
     await app.configure(configuration(fileSystem));
 
-
     // Apply another plug-ins, i.e. ones that *you* have written.
     //
     // Typically, the plugins in `lib/src/config/plugins/plugins.dart` are plug-ins
