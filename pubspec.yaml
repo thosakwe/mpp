@@ -33,4 +33,4 @@ dev_dependencies:
   test: ^1.0.0
 executables:
   mpp: mpp
-  mpp_server: mpp_server
+  mpp_server: prod
