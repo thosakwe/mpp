@@ -2,7 +2,6 @@ library mpp.src.config;
 
 import 'package:angel_configuration/angel_configuration.dart';
 import 'package:angel_framework/angel_framework.dart';
-import 'package:angel_jael/angel_jael.dart';
 import 'package:file/file.dart';
 import 'plugins/plugins.dart' as plugins;
 
@@ -14,10 +13,6 @@ AngelConfigurer configureServer(FileSystem fileSystem) {
     // See: https://github.com/angel-dart/configuration
     await app.configure(configuration(fileSystem));
 
-    // Configure our application to render Jael templates from the `views/` directory.
-    //
-    // See: https://github.com/angel-dart/jael
-    await app.configure(jael(fileSystem.directory('views')));
 
     // Apply another plug-ins, i.e. ones that *you* have written.
     //
