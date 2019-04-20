@@ -49,23 +49,23 @@ Starts a server at `http://localhost:3000` by default, running
 as many instances as you have available processor cores:
 
 ```
-pub run mpp:prod
+mpp_server
 ```
 
 To see options, i.e. port, etc.:
 
 ```
-pub run mpp:prod -h
+mpp_server -h
 ```
 
 ### Creating Users
 ```
-pub run mpp auth -u foo -p bar
+mpp auth -u foo -p bar
 ```
 
 ### Hosting a Package
 ```
-pub run mpp mirror -n <package_name> -u <git url>
+mpp mirror -n <package_name> -u <git url>
 ```
 
 ## Deployment
@@ -75,7 +75,7 @@ covered in great detail here. In general, though, the *minimal* steps are:
 * Install `mpp`.
 * Using the `mpp` command line, create as many user accounts as is necessary.
 * Using the `mpp` command line, mark repositories to be mirrored.
-* Run `pub run mpp:prod`.
+* Run `mpp_server`.
 
 However, you might also consider:
 * Configuring HTTPS
