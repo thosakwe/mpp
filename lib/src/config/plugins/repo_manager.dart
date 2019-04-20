@@ -73,7 +73,7 @@ class RepoManager {
       } else {
         try {
           out.add(PubSpec.fromYamlString(gitShow.stdout as String));
-        } on FormatException {
+        } catch(_) {
           // Ignore this...
         }
       }

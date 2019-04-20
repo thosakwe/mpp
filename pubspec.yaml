@@ -1,5 +1,5 @@
 name: mpp
-version: 1.0.1
+version: 1.0.2
 author: Tobe <thosakwe@gmail.com>
 description: Git-based, password-protected private Pub server.
 environment:
