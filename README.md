@@ -1,4 +1,7 @@
-# mpp
+![mpp](logo.png)
+
+[![Pub](https://img.shields.io/pub/v/mpp.svg)](https://pub.dartlang.org/packages/mpp)
+
 Git-based, password-protected private Pub server.
 
 `mpp` is pretty minimal, and requires setup, but gets the job done.
