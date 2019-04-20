@@ -1,0 +1,39 @@
+name: mpp
+version: 1.0.0
+author: Tobe <thosakwe@gmail.com>
+description: Git-based, password-protected private Pub server.
+environment:
+  sdk: '>=2.1.0 <3.0.0'
+homepage: https://github.com/thosakwe/mpp
+dependencies:
+  angel_auth: ^2.0.0 # Supports stateless authentication via JWT
+  angel_configuration: ^2.0.0 # Loads application configuration, along with support for .env files.
+  angel_container: ^1.0.0
+  angel_file_service: ^2.0.0
+  angel_framework: ^2.0.0-rc.0 # The core server library.
+  angel_hot: ^2.0.0
+  angel_http_exception: ^1.0.0
+  angel_jael: ^2.0.0 # Server-side templating engine
+  angel_production: ^1.0.0-alpha
+  angel_serialize: ^2.0.0
+  angel_static: ^2.0.0 # Static file server
+  angel_validate: ^2.0.0 # Allows for validation of input data
+  archive: ^2.0.0
+  args: ^1.0.0
+  dbcrypt: ^1.0.0
+  file: ^5.0.0
+  http_parser: ^3.0.0
+  io: ^0.3.2
+  logging: ^0.11.0
+  path: ^1.0.0
+  pub_semver: ^1.0.0
+  pubspec: ^0.1.1
+  tuple: ^1.0.0
+dev_dependencies:
+  angel_serialize_generator: ^2.0.0
+  angel_test: ^2.0.0 # Utilities for testing Angel servers.
+  build_runner: ^1.0.0
+  pedantic: ^1.0.0
+  test: ^1.0.0
+executables:
+  mpp: mpp

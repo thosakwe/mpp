@@ -1,0 +1,10 @@
+library mpp.src.routes.controllers;
+
+import 'dart:async';
+import 'package:angel_framework/angel_framework.dart';
+import 'pub.dart';
+
+Future<void> configureServer(Angel app) async {
+  /// Controllers will not function unless wired to the application!
+  await app.mountController<PubController>();
+}
