@@ -1,3 +1,6 @@
+# 1.0.2+1
+* Pub score fixes.
+
 # 1.0.2
 * Fix a bug on pubspec parsing.
 
